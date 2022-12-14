@@ -30,10 +30,6 @@
             $statement = $database->prepare(
                 'DELETE FROM students WHERE id = :id'
             );
-            $statement->execute([
-                'id' => $_POST['student_id']
-            ]);
-
             header('Location:/');
             exit;
         }
